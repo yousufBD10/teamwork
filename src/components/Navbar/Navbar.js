@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import logo from '../assets/logo/TaskMaster_logo.png'
+import log from '../assets/logo/TaskMaster_logo.png'
 
 const Navbar = () => {
     // const navigate = useNavigate()
@@ -38,13 +38,14 @@ const Navbar = () => {
               <li><a>Item 3</a></li> */}
             </ul>
           </div>
-         <Link to='/'><img className='w-48 lg:ml-12' src={logo} alt="" /></Link>
+         <Link to='/'><img className='w-48 lg:ml-12' src={log} alt="" /></Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
           <Link to='/home'>  <li><a>Home</a></li></Link>
           <Link to='/service'>  <li><a>Service</a></li></Link>
-          <Link to='/home'>  <li><a>About</a></li></Link>
+          <Link to='/about'>  <li><a>About</a></li></Link>
+          <Link to='/picing'>  <li><a>Picing</a></li></Link>
             {/* <li tabIndex={0}>
               <a>
                 Parent
